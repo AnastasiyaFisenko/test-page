@@ -5,9 +5,11 @@ class AutoButton extends StatelessWidget {
       {super.key,
       required this.backgroundColor,
       required this.fontColor,
-      required this.data});
+      required this.data,
+      this.height = 48});
   int backgroundColor;
   int fontColor;
+  double height;
   String data;
 
   @override
@@ -17,8 +19,8 @@ class AutoButton extends StatelessWidget {
         debugPrint('Testing');
       },
       child: Container(
-        width: 328,
-        height: 48,
+        width: double.infinity,
+        height: height,
         decoration: BoxDecoration(
           color: Color(backgroundColor),
           borderRadius: BorderRadius.circular(16),
