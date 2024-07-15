@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
-class AutoButton extends StatelessWidget {
+class AutoButtonWidget extends StatelessWidget {
   final Color backgroundColor;
   final Color fontColor;
   final String data;
   final double height;
   final VoidCallback onFunc;
 
-  const AutoButton({
+  const AutoButtonWidget({
     super.key,
     required this.backgroundColor,
     required this.fontColor,

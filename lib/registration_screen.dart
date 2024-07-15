@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'reg_form.dart';
+import 'registration_form_widget.dart';
+import 'styles.dart';
 
-class RegScreen extends StatelessWidget {
-  const RegScreen({super.key});
+class RegistrationScreen extends StatelessWidget {
+  const RegistrationScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -11,7 +12,7 @@ class RegScreen extends StatelessWidget {
         backgroundColor: Color(0xFFF2F4F7),
         body: Padding(
           padding: EdgeInsets.symmetric(horizontal: 16),
-          child: RegForm(),
+          child: RegistrationFormWidget(),
         ),
         appBar: AppBar(
           backgroundColor: Color(0xFFF2F4F7),
@@ -19,11 +20,7 @@ class RegScreen extends StatelessWidget {
             padding: EdgeInsets.only(top: 8),
             child: Text(
               'Регистрация',
-              style: TextStyle(
-                fontFamily: 'Inter',
-                fontWeight: FontWeight.w500,
-                fontSize: 30,
-              ),
+              style: mainHeader,
             ),
           ),
         ),

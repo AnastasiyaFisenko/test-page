@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'auto_button.dart';
+import 'auto_button_widget.dart';
 
 class AppScreen extends StatelessWidget {
   const AppScreen({super.key});
@@ -37,14 +37,14 @@ class AppScreen extends StatelessWidget {
               SizedBox(
                 height: 40,
               ),
-              AutoButton(
+              AutoButtonWidget(
                 backgroundColor: Color(0xFFEC4A0A),
                 fontColor: Color(0xFFFFFFFF),
                 data: 'Зарегистрироваться',
                 onFunc: () {},
               ),
               SizedBox(height: 16),
-              AutoButton(
+              AutoButtonWidget(
                   backgroundColor: Color(0XFFF2F4F7),
                   fontColor: Color(0xFFEC4A0A),
                   data: 'Войти',

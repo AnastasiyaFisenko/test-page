@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'reg_page.dart';
+import 'registration_screen.dart';
+import 'app_screen.dart';
 
 void main() {
-  runApp(const RegScreen());
+  runApp(const RegistrationScreen());
 }
